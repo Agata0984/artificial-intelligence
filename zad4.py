@@ -9,14 +9,12 @@ def opt_dist(line, D):
     temp1 = 0
     temp2 = D
     for i in line:
-        # print(f"i {i} {len(line)} line {l} {line}")
         if(i == '1'):
             colored += 1
     if(D == 0):
         change = colored
         return change
     if(D == 1):
-        # print(f"colored {colored}")
         if(colored > 0):
             change = colored-1
         else:
@@ -47,45 +45,3 @@ for i in file2:
     print(int(array[1]))
     file1.write(str(opt_dist(array[0], int(array[1]))) + "\n")
 file1.close()
-
-# print(opt_dist('0000000001', 1))
-# print(opt_dist('0000000010', 1))
-# print(opt_dist('1000000000', 1))
-# print(opt_dist('0100000000', 1))
-# 
-# print("\n")
-# 
-# print(opt_dist('0010001000', 5))
-# print(opt_dist('0010001000', 4))
-# print(opt_dist('0010001000', 3))
-# print(opt_dist('0010001000', 2))
-# print(opt_dist('0010001000', 1))
-# print(opt_dist('0010001000', 0))
-# print(opt_dist('0010101000', 5))
-# print(opt_dist('0010101000', 4))
-# print(opt_dist('0010101000', 3))
-# print(opt_dist('0010101000', 2))
-# print(opt_dist('0010101000', 1))
-# print(opt_dist('0010101000', 0))
-
-# 0
-# 0
-# 0
-# 0
-
-# 3
-# 4
-# 3
-# 2
-# 1
-# 2
-# 2
-# 3
-# 2
-# 3
-# 2
-# 3
-
-#print("")
-#now = datetime.datetime.now() - start
-#print(now.microseconds)
